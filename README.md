@@ -35,3 +35,20 @@
 - The code also prints the confusion matrix for model evaluation.
 
 Overall, this code demonstrates the entire process of building and evaluating a customer churn prediction model, including data loading, exploratory data analysis, data preprocessing, and model building. It assesses two models' performance and provides important metrics for model evaluation.
+
+## Streamlit App
+
+1. **Data Input:** The app collects the following user information using input widgets:
+   - Age: A slider to select the user's age.
+   - Subscription Length: A slider to choose the subscription length in months.
+   - Monthly Bill: A numeric input field for the monthly bill amount.
+   - Total Usage (GB): A numeric input field for the total data usage in gigabytes.
+   - Gender: A dropdown list to select the user's gender.
+
+2. **Data Processing:** The app maps the selected gender to a numeric value for model input.
+
+3. **Churn Prediction:** Upon clicking the "Predict Churn" button, the app uses the user's input data to make a churn prediction using a pre-trained machine learning model. If the model predicts no churn, it displays a success message with a low churn probability. If churn is predicted, it shows an error message with a high churn probability.
+
+4. **Running the App:** The app can be run using the `streamlit run` command in the terminal. It opens a web page where users can interact with the app.
+
+This Streamlit app simplifies the process of collecting user data and making churn predictions, making it a user-friendly tool for instructors or users interested in exploring the customer churn prediction model.
